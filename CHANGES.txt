@@ -1,0 +1,12 @@
+CHANGELOG
+
+v1.0.1
+-------------
+
+   Cleaned up two minor compile warnings
+
+   Clarified the licensing notices - this is 
+   GPLed because Samba is.
+
+   Otherwise, no change in behavior at all 
+   from version 1.0

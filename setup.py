@@ -12,7 +12,7 @@ from distutils.core import setup, Extension
 
 setup(name = "smbpasswd", 
       description = "SMB Password Hash Generator - suitable for use with Samba",
-      version = "1.0",
+      version = "1.0.1",
       license = "GPL",
       author = "Barry Pederson",
       author_email = "bp@barryp.org",
