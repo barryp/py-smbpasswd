@@ -102,7 +102,6 @@ nthash(PyObject *self, PyObject *args)
     char *pwd;
     int pwd_len;
     char hashout[17];
-    int i;
          
     pwd = NULL;         
     if (!(PyArg_ParseTuple(args, "es#", "utf-16le", &pwd, &pwd_len)))

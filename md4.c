@@ -25,6 +25,8 @@
    It assumes that a int is at least 32 bits long
 */
 
+#include <string.h>
+
 typedef unsigned int uint32;
 
 static uint32 A, B, C, D;
