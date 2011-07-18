@@ -1,5 +1,18 @@
 CHANGELOG
 
+v1.0.2
+-------------
+
+    Slight changes to the packaging only, for 
+    submission to PyPi.  Basically wanted the 
+    tgz file to extract to smbpasswd-x.x.x instead
+    of py-smbpasswd-x.x.x
+
+    The actual Python and C code for the library
+    has not changed one bit.  The setup.py just
+    changed slightly for a version number bump
+    and some additional trove classifiers.
+
 v1.0.1
 -------------
 

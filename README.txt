@@ -9,11 +9,11 @@ INSTALLATION
 
 1. Unpack the distribution.
 
-        tar xzvf py-smbpasswd-1.0.1.tar.gz
+        tar xzvf smbpasswd-1.0.2.tgz
 
 2. Compile and install.
 
-        cd py-smbpasswd-1.0.1
+        cd smbpasswd-1.0.2
         python setup.py install
 
 

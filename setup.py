@@ -10,17 +10,22 @@
 import sys
 from distutils.core import setup, Extension
 
-setup(name = "smbpasswd", 
+setup(name = "smbpasswd",
       description = "SMB Password Hash Generator - suitable for use with Samba",
-      version = "1.0.1",
+      version = "1.0.2",
+      classifiers=[
+          'Programming Language :: Python',
+	  'License :: OSI Approved :: GNU General Public License (GPL)',
+	  'Topic :: Software Development :: Libraries :: Python Modules',
+          ],
       license = "GPL",
       author = "Barry Pederson",
       author_email = "bp@barryp.org",
       url = "http://barryp.org/software/py-smbpasswd",
-      ext_modules = 
+      ext_modules =
         [
         Extension("smbpasswd", ['md4.c', 'smbdes.c', 'smbpasswd.c'])
         ]
      )
-    
-##### That's all folks ###########    
+
+##### That's all folks ###########
