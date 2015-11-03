@@ -1,4 +1,7 @@
+[![Build Status](https://travis-ci.org/barryp/py-smbpasswd.svg?branch=trunk)](https://travis-ci.org/barryp/py-smbpasswd)
+
 smbpasswd
+=========
 
     Python SMB Password Hash Generator module
 
