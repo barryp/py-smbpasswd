@@ -21,7 +21,7 @@ setup(name = "smbpasswd",
       license = "GPL",
       author = "Barry Pederson",
       author_email = "bp@barryp.org",
-      url = "http://code.google.com/p/py-smbpasswd/",
+      url = "https://github.com/barryp/py-smbpasswd",
       ext_modules =
         [
         Extension("smbpasswd", ['md4.c', 'smbdes.c', 'smbpasswd.c'])
