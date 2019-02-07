@@ -70,7 +70,11 @@ hash_to_string(char *tmp)
         outbuffer[(i*2)+1] = HEXCHARS[   c   & 0x0f];
         }
         
+#if PY_MAJOR_VERSION >= 3
+    return PyBytes_FromStringAndSize(outbuffer, 32);
+#else
     return PyString_FromStringAndSize(outbuffer, 32);
+#endif
     }
 
 
@@ -159,11 +163,29 @@ static PyMethodDef smbpasswd_functions[] =
     };
 
 
+#if PY_MAJOR_VERSION >= 3
+static struct PyModuleDef moduledef = {
+    PyModuleDef_HEAD_INIT,  /* m_base */
+    "smbpasswd",            /* m_name */
+    module_doc,             /* m_doc */
+    -1,                     /* m_size */
+    smbpasswd_functions     /* m_methods */
+};
+#endif
+
+
 /* Initialize this module. */
-void 
-initsmbpasswd(void)
+#if PY_MAJOR_VERSION >= 3
+PyMODINIT_FUNC PyInit_smbpasswd(void)
+#else
+PyMODINIT_FUNC initsmbpasswd(void)
+#endif
     {
+#if PY_MAJOR_VERSION >= 3
+    return PyModule_Create(&moduledef);
+#else
     Py_InitModule3("smbpasswd", smbpasswd_functions, module_doc);
+#endif
     }
 
 /****** EOF *********/
